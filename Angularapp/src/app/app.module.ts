@@ -26,6 +26,8 @@ import { LeaderService } from './services/leader.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule, MatCheckboxModule, MatInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -42,14 +44,19 @@ import { MatDialogModule } from '@angular/material/dialog';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
     FlexLayoutModule,
+    MatToolbarModule,
     MatListModule,
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatDialogModule,
+    MatInputModule,
     AppRoutingModule,
-    MatDialogModule
+    FormsModule,
+
   ],
   entryComponents: [
     LoginComponent
